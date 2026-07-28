@@ -107,8 +107,25 @@ The alpha.4 corrective module then passed 23/23 tests and both syntax checks.
 Its local browser smoke rendered version `0.1.0-alpha.4`, kept the initial
 two-products-plus-one-SRD front door unchanged, described BattleStarSol as the
 playable strategic/tactical pre-alpha, and exposed generic A.T.L.A.S. as a
-separate dedicated-repository strategic galaxy. Public deployment evidence is
-recorded after the release workflow and public Page smoke.
+separate dedicated-repository strategic galaxy.
+
+Commit `8ea7913fb609b13de6085914192ac64707254890` passed independent
+verification workflow run `30371064135` and Pages workflow run `30371065089`
+without annotations. The published Page artifact digest was
+`sha256:b08999780c25cd78aac72d20148c51e95ff271203442e4d84b8a325cd77dc094`.
+
+The public alpha.4 smoke at
+`https://rustycohl.github.io/GZG-NOW/?release=8ea7913` verified:
+
+- version `0.1.0-alpha.4`, the unchanged three-item front door, playable
+  BattleStarSol description, and separate A.T.L.A.S. galaxy link;
+- a claimed local ORACLE session and BREAKER selection;
+- a signed MARK result spending 3 AP from the strict 10 AP pool;
+- a literal three-zero SHA-256 artifact proof after 3,375 local attempts; and
+- final verification of four signed events, valid proof, ledger-derived owner,
+  and no claimed chain settlement.
+
+The attempt count is observation evidence, not a fixed expected value.
 
 ## Still pending at this checkpoint
 
