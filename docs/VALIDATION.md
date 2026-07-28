@@ -72,9 +72,13 @@ three public-release entries separately from all six backend port flags,
 completed the full four-event evidence loop, verified the artifact proof and
 derived owner, and produced no console entries.
 
+The production alpha.3 workflow then completed successfully. A public-browser
+smoke test confirmed version `0.1.0-alpha.3`, all three front-door entries, the
+separate backend-port section, local protocol readiness, and no console
+entries.
+
 ## Still pending at this checkpoint
 
-- Production GZG:NOW alpha.3 Pages deployment and URL smoke test.
 - Dedicated narrow-viewport browser capture.
 - External security review.
 - JOKE wallet/chain adapter and peer transport, which are out of scope for this
