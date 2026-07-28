@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Defined every independently deployed Page as a galaxy with its own
+  repository, runtime, tests, documentation, and standalone fallback.
+- Added the transport-neutral `gzg.galaxy-message/1.0` envelope, JSON schema,
+  canonical examples, executable validation, SHA-256 sealing, and tamper tests.
+- Recorded the backup-to-live-smoke modular delivery loop and the distinct
+  push/deploy versus Creative Commons publication lanes.
+
 ## 0.1.0-alpha.3 — 2026-07-28
 
 - Established the first audience-facing release as two standalone products

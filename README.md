@@ -31,6 +31,7 @@ Then open `http://127.0.0.1:4173`. GitHub Pages publishes the same files from
 
 - `site/` — the complete browser product.
 - `tests/` — deterministic protocol and rules tests.
+- `contracts/` — versioned galaxy I/O schema and canonical message examples.
 - `docs/` — current engineering contract, review findings, and publication map.
 - `products/` — a map to independent audience-facing product repositories.
 - `ports/` — a map to independent protocol/test repositories.
@@ -39,6 +40,11 @@ Then open `http://127.0.0.1:4173`. GitHub Pages publishes the same files from
 Start with [`docs/ORIENTATION.md`](docs/ORIENTATION.md) for the current shared
 map of canonical decisions, live surfaces, legacy value, and the next alpha
 iteration.
+
+Every Page is an autonomous galaxy: one repository, one independently usable
+Page, and versioned I/O rather than shared mutable runtime code. The controlling
+engineering and delivery loop is
+[`docs/GALAXY-CONTRACT.md`](docs/GALAXY-CONTRACT.md).
 
 The separate `rustycohl/groundzerogaming` repository is the already-published
 Creative Commons document line: **creative writing that compiles**. “Gaming”

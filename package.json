@@ -9,8 +9,8 @@
   },
   "scripts": {
     "start": "node tools/serve.mjs",
-    "test": "node --test tests/core.test.mjs tests/protocol.test.mjs tests/registry.test.mjs tests/rules.test.mjs",
-    "check": "node --check site/app.mjs"
+    "test": "node --test tests/core.test.mjs tests/galaxy-contract.test.mjs tests/protocol.test.mjs tests/registry.test.mjs tests/rules.test.mjs",
+    "check": "node --check site/app.mjs && node --check site/lib/galaxy-envelope.mjs"
   },
   "license": "(MIT OR Apache-2.0)"
 }

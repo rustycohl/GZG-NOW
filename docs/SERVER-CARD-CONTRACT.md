@@ -2,6 +2,11 @@
 
 Status: controlling repository and deployment contract for GZG:NOW
 
+Server cards are protocol-port galaxies. The broader rules for every product,
+reference, tool, and port Page are defined in
+[`GALAXY-CONTRACT.md`](GALAXY-CONTRACT.md); this document adds the manifest and
+release requirements specific to server cards.
+
 ## Constraint turned architecture
 
 GitHub Pages provides one live Pages site per repository. Ground Zero Games
@@ -50,6 +55,8 @@ embedded module or design candidate, not a released server card.
    server state does not.
 10. Products may skin or compose a card, but the generic reference port remains
     independently usable.
+11. Cross-repository behavior uses the versioned galaxy-message envelope; a
+    card never requires another repository's mutable runtime code.
 
 ## First extracted ports
 

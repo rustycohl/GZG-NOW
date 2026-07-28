@@ -1,0 +1,31 @@
+{
+  "gzg": "galaxy-message",
+  "version": "1.0",
+  "id": "xcommand-extraction-demo-001",
+  "type": "xcommand.extraction",
+  "source": {
+    "galaxy": "xCommand",
+    "version": "0.1.1-prealpha",
+    "instance": "local-browser"
+  },
+  "target": {
+    "galaxy": "BattleStarSol",
+    "capability": "strategic.receive-extraction"
+  },
+  "created_at": "2026-07-28T12:10:00.000Z",
+  "correlation_id": "atlas-selection-demo-001",
+  "payload": {
+    "schema": "gzg.xcommand.extraction/1.0",
+    "outcome": "victory",
+    "mission_seed": "proving-ground-001",
+    "turns": 4,
+    "survivors": 3,
+    "salvage": [
+      {
+        "id": "salvage-alloy-001",
+        "kind": "alloy",
+        "quantity": 2
+      }
+    ]
+  }
+}

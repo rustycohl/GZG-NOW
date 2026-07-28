@@ -2,6 +2,17 @@
 
 Date: 2026-07-28
 
+## Galaxy contract module
+
+- Shared envelope schema and two canonical examples: pass.
+- Executable validation rejects malformed messages and unknown major versions:
+  pass.
+- Unknown extension fields survive validation and forwarding: pass.
+- Required discriminator and version cannot be overridden by callers: pass.
+- Canonical SHA-256 sealing verifies and detects payload tampering: pass.
+- Full GZG:NOW suite after the module: 22/22 pass.
+- Node.js syntax checks: pass.
+
 ## Automated checks
 
 - Node.js 22 syntax check: pass.
