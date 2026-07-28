@@ -36,6 +36,10 @@ Then open `http://127.0.0.1:4173`. GitHub Pages publishes the same files from
 - `ports/` — a map to independent protocol/test repositories.
 - `tools/` — a tiny local static server for testing.
 
+Start with [`docs/ORIENTATION.md`](docs/ORIENTATION.md) for the current shared
+map of canonical decisions, live surfaces, legacy value, and the next alpha
+iteration.
+
 The separate `rustycohl/groundzerogaming` repository is the already-published
 Creative Commons document line: **creative writing that compiles**. “Gaming”
 names the documentary/rules publication, while “Games” names runnable products.
