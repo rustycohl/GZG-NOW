@@ -1,0 +1,18 @@
+{
+  "name": "GZG:NOW Protocol Reference Alpha",
+  "short_name": "GZG:NOW",
+  "description": "A browser-local signed cause-and-effect loop for Ground Zero Gaming.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#090b0f",
+  "theme_color": "#090b0f",
+  "icons": [
+    {
+      "src": "./assets/gzg-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

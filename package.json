@@ -1,0 +1,16 @@
+{
+  "name": "gzg-now",
+  "version": "0.1.0-alpha.1",
+  "description": "A browser-local protocol reference alpha for Ground Zero Gaming.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node --test",
+    "check": "node --check site/app.mjs"
+  },
+  "license": "Apache-2.0"
+}

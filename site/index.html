@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090b0f">
+    <meta
+      name="description"
+      content="GZG:NOW — a browser-local protocol reference alpha for Ground Zero Gaming."
+    >
+    <link rel="icon" href="./assets/gzg-mark.svg" type="image/svg+xml">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="./styles.css">
+    <title>GZG:NOW // Protocol Reference Alpha</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to the protocol console</a>
+    <div class="ambient-grid" aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="mini-mark" href="#top" aria-label="GZG NOW home">
+        <span class="mini-mark__sigil">GZ</span>
+        <span>GROUND ZERO GAMING</span>
+      </a>
+      <div class="build-state">
+        <span class="pulse" aria-hidden="true"></span>
+        <span id="boot-status">INITIALIZING LOCAL PROTOCOL</span>
+      </div>
+      <span class="version">0.1.0-alpha.1</span>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow">NO SERVER // SIGNED CAUSE AND EFFECT</p>
+          <h1 id="hero-title">GZG:<span>NOW</span></h1>
+          <p class="hero__lead">
+            Enter as a Ghost. Choose a card. Make the mark. Prove the work.
+          </p>
+          <p class="hero__body">
+            This alpha is a complete browser-local evidence loop—not a mock
+            blockchain. Every action below can be inspected, exported, and
+            independently verified.
+          </p>
+        </div>
+
+        <div class="hero__seal" aria-label="Current alpha boundary">
+          <span class="hero__seal-ring">LOCAL</span>
+          <strong>10</strong>
+          <span>BASE AP</span>
+          <small>JOKE BRIDGE<br>NOT IMPLEMENTED</small>
+        </div>
+      </section>
+
+      <section class="truth-strip" aria-label="Alpha truth boundary">
+        <span><b>NETWORK</b> browser-local</span>
+        <span><b>AUTHORITY</b> signed events</span>
+        <span><b>CHAIN</b> unanchored</span>
+        <span><b>VALUE</b> none</span>
+      </section>
+
+      <section class="telemetry" aria-label="Live protocol telemetry">
+        <article>
+          <span class="telemetry__label">ORACLE</span>
+          <strong id="identity-state">GHOST</strong>
+          <small id="identity-short">generating local key…</small>
+        </article>
+        <article>
+          <span class="telemetry__label">xCOMMAND</span>
+          <strong><span id="ap-remaining">10</span> / 10 AP</strong>
+          <small>turn <span id="turn-number">1</span></small>
+        </article>
+        <article>
+          <span class="telemetry__label">EVENT HEAD</span>
+          <strong id="ledger-count">0 events</strong>
+          <small id="ledger-head">GENESIS</small>
+        </article>
+        <article>
+          <span class="telemetry__label">P2Pm</span>
+          <strong id="proof-state">UNMINTED</strong>
+          <small>local SHA-256 work</small>
+        </article>
+      </section>
+
+      <section class="protocol-grid" aria-label="Protocol sequence">
+        <article class="module module--oracle" aria-labelledby="oracle-heading">
+          <header class="module__header">
+            <span class="module__index">01</span>
+            <div>
+              <p>IDENTITY LAYER</p>
+              <h2 id="oracle-heading">ORACLE</h2>
+            </div>
+            <span class="module__state" id="oracle-state-pill">GHOST</span>
+          </header>
+
+          <div class="module__body">
+            <p class="module__intro">
+              Your browser created an ephemeral signing key. A Ghost can play
+              and verify, but cannot mint.
+            </p>
+            <dl class="readout">
+              <div>
+                <dt>Oracle ID</dt>
+                <dd id="oracle-id">—</dd>
+              </div>
+              <div>
+                <dt>Signature</dt>
+                <dd>Ed25519 / local session</dd>
+              </div>
+              <div>
+                <dt>Custody</dt>
+                <dd>memory only / destroyed on refresh</dd>
+              </div>
+            </dl>
+
+            <form class="claim-form" id="claim-form">
+              <label for="handle">Claim this development session</label>
+              <div class="control-row">
+                <input
+                  id="handle"
+                  name="handle"
+                  autocomplete="off"
+                  maxlength="32"
+                  minlength="2"
+                  placeholder="local handle"
+                  required
+                >
+                <button class="button button--primary" id="claim-button" type="submit">
+                  CLAIM
+                </button>
+              </div>
+              <small>This is not a wallet, account, or chain registration.</small>
+            </form>
+          </div>
+        </article>
+
+        <article class="module module--dealer" aria-labelledby="dealer-heading">
+          <header class="module__header">
+            <span class="module__index">02</span>
+            <div>
+              <p>CARD LAYER</p>
+              <h2 id="dealer-heading">DEALER</h2>
+            </div>
+            <span class="module__state">DECKER-DECK 01</span>
+          </header>
+
+          <div class="module__body">
+            <p class="module__intro">
+              Choose the causal method. Cards modify action cost; they never
+              define the AP pool.
+            </p>
+            <div class="dealer-deck" id="dealer-deck" role="radiogroup" aria-label="Commander cards"></div>
+          </div>
+        </article>
+
+        <article class="module module--mark" aria-labelledby="mark-heading">
+          <header class="module__header">
+            <span class="module__index">03</span>
+            <div>
+              <p>PLAYABLE PROOF</p>
+              <h2 id="mark-heading">MARK</h2>
+            </div>
+            <span class="module__state">SCALED d10</span>
+          </header>
+
+          <div class="module__body">
+            <div class="challenge">
+              <div>
+                <p class="eyebrow">CURRENT MARK // ROUND <span id="mark-round">1</span></p>
+                <h3 id="mark-title">Resolving signal…</h3>
+                <p id="mark-signal">The deterministic window is opening.</p>
+              </div>
+              <div class="dc-dial" aria-label="Difficulty class">
+                <span>DC</span>
+                <strong id="mark-dc">—</strong>
+              </div>
+            </div>
+
+            <div class="control-row control-row--wide">
+              <button class="button button--primary" id="play-button" type="button">
+                MAKE THE MARK
+              </button>
+              <button class="button" id="new-turn-button" type="button">
+                OPEN NEW TURN
+              </button>
+            </div>
+
+            <div class="result-panel" id="mark-result" data-outcome="waiting" aria-live="polite">
+              <span class="result-panel__roll" id="result-roll">—</span>
+              <div>
+                <p id="result-label">AWAITING ACTION</p>
+                <strong id="result-equation">d10 + ability + skill vs. DC</strong>
+                <small id="result-detail">Natural 1 and 10 threats confirm on 6+.</small>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="module module--p2pm" aria-labelledby="p2pm-heading">
+          <header class="module__header">
+            <span class="module__index">04</span>
+            <div>
+              <p>WORK + ARTIFACT</p>
+              <h2 id="p2pm-heading">P2Pm</h2>
+            </div>
+            <span class="module__state">SHA-256 / 000</span>
+          </header>
+
+          <div class="module__body">
+            <p class="module__intro">
+              Bind the latest result to the signed ledger and find a hash with
+              three leading hexadecimal zeroes. Ghosts cannot mint.
+            </p>
+
+            <button class="button button--primary button--full" id="mint-button" type="button">
+              MINT LOCAL ARTIFACT
+            </button>
+            <div class="work-meter" aria-live="polite">
+              <span id="mint-progress">Waiting for a claimed result.</span>
+              <div><i id="work-meter-fill"></i></div>
+            </div>
+
+            <dl class="readout readout--artifact">
+              <div>
+                <dt>Artifact</dt>
+                <dd id="artifact-id">—</dd>
+              </div>
+              <div>
+                <dt>Proof</dt>
+                <dd id="artifact-proof">not computed</dd>
+              </div>
+              <div>
+                <dt>JOKE anchor</dt>
+                <dd>not implemented</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+      </section>
+
+      <section class="evidence" aria-labelledby="evidence-heading">
+        <header class="evidence__header">
+          <div>
+            <p class="eyebrow">REPLAY IS THE RECEIPT</p>
+            <h2 id="evidence-heading">SIGNED EVENT LEDGER</h2>
+          </div>
+          <div class="control-row">
+            <button class="button" id="verify-button" type="button">VERIFY ALL</button>
+            <button class="button" id="export-button" type="button">EXPORT BUNDLE</button>
+            <button class="button button--quiet" id="reset-button" type="button">NEW SESSION</button>
+          </div>
+        </header>
+
+        <div class="verification" id="verification" data-state="idle" aria-live="polite">
+          Run verification to check every event hash, Ed25519 signature, link,
+          artifact proof, and derived owner.
+        </div>
+
+        <ol class="ledger" id="ledger-list" aria-label="Signed events"></ol>
+      </section>
+
+      <section class="boundary" aria-labelledby="boundary-heading">
+        <div>
+          <p class="eyebrow">ALPHA BOUNDARY</p>
+          <h2 id="boundary-heading">WHAT IS REAL // WHAT IS NEXT</h2>
+        </div>
+        <div class="boundary__columns">
+          <article>
+            <h3>REAL IN THIS BUILD</h3>
+            <ul>
+              <li>browser-generated Ed25519 signatures</li>
+              <li>canonical SHA-256 event identifiers</li>
+              <li>Base-10 action authority</li>
+              <li>scaled d10 resolution and confirmation</li>
+              <li>literal local proof-of-work</li>
+              <li>portable verification bundle</li>
+            </ul>
+          </article>
+          <article>
+            <h3>EXPLICITLY NOT YET BUILT</h3>
+            <ul>
+              <li>modern PIVX-based JOKE network</li>
+              <li>JOKE wallet identity custody</li>
+              <li>NEURAL token settlement</li>
+              <li>P2P transport and hosting yield</li>
+              <li>on-chain card ownership</li>
+              <li>production threat model or audit</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>GZG:NOW // BUILD THE EVIDENCE</span>
+      <a href="https://github.com/rustycohl/groundzerogaming">
+        MODULAR DESIGN NOTEBOOK ↗
+      </a>
+    </footer>
+
+    <script type="module" src="./app.mjs"></script>
+  </body>
+</html>

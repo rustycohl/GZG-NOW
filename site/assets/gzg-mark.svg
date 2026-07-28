@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">GZG NOW mark</title>
+  <rect width="128" height="128" rx="18" fill="#090b0f"/>
+  <path d="M18 18h92v92H18z" fill="none" stroke="#d6ff2f" stroke-width="4"/>
+  <path d="M30 38h35L45 64l20 26H30M98 38H72l20 26-20 26h26" fill="none" stroke="#f1f5ec" stroke-width="8" stroke-linejoin="bevel"/>
+  <circle cx="64" cy="64" r="7" fill="#ff3d9a"/>
+</svg>
