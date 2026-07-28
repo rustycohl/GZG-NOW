@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#090b0f">
     <meta
       name="description"
-      content="GZG:NOW — a browser-local protocol reference alpha for Ground Zero Gaming."
+      content="GZG:NOW — a browser-local protocol reference alpha for Ground Zero Games."
     >
     <link rel="icon" href="./assets/gzg-mark.svg" type="image/svg+xml">
     <link rel="manifest" href="./manifest.webmanifest">
@@ -21,13 +21,13 @@
     <header class="topbar">
       <a class="mini-mark" href="#top" aria-label="GZG NOW home">
         <span class="mini-mark__sigil">GZ</span>
-        <span>GROUND ZERO GAMING</span>
+        <span>GROUND ZERO GAMES</span>
       </a>
       <div class="build-state">
         <span class="pulse" aria-hidden="true"></span>
         <span id="boot-status">INITIALIZING LOCAL PROTOCOL</span>
       </div>
-      <span class="version">0.1.0-alpha.1</span>
+      <span class="version">0.1.0-alpha.2</span>
     </header>
 
     <main id="main">
@@ -260,6 +260,88 @@
         <ol class="ledger" id="ledger-list" aria-label="Signed events"></ol>
       </section>
 
+      <section class="ports" aria-labelledby="ports-heading">
+        <header class="ports__header">
+          <div>
+            <p class="eyebrow">PORTS IN A STORM // LIVE INDEPENDENT SURFACES</p>
+            <h2 id="ports-heading">SERVER-CARD FLAGS</h2>
+          </div>
+          <p>
+            Every working card below owns a repository, a public Page, and an
+            executable self-test. GZG:NOW consumes the ports; it does not contain
+            their live surfaces.
+          </p>
+        </header>
+
+        <div class="port-grid">
+          <article class="port-card port-card--cyan">
+            <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
+            <p>TIER 2 // IDENTITY</p>
+            <h3>ORACLE</h3>
+            <span>Ghost identity, session claims, and signature verification.</span>
+            <div>
+              <a href="https://rustycohl.github.io/ORACLE/">OPEN PORT</a>
+              <a href="https://github.com/rustycohl/ORACLE">SOURCE</a>
+            </div>
+          </article>
+
+          <article class="port-card port-card--acid">
+            <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
+            <p>TIER 3 // RESOLUTION</p>
+            <h3>d10SRD</h3>
+            <span>Canonical scaled-d10 result and confirmation rules.</span>
+            <div>
+              <a href="https://rustycohl.github.io/d10SRD/">OPEN PORT</a>
+              <a href="https://github.com/rustycohl/d10SRD">SOURCE</a>
+            </div>
+          </article>
+
+          <article class="port-card port-card--pink">
+            <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
+            <p>TIER 4 // TACTICS</p>
+            <h3>xCommand</h3>
+            <span>Strict Base-10 action authority and turn accounting.</span>
+            <div>
+              <a href="https://rustycohl.github.io/xCommand/">OPEN PORT</a>
+              <a href="https://github.com/rustycohl/xCommand">SOURCE</a>
+            </div>
+          </article>
+
+          <article class="port-card port-card--pink">
+            <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
+            <p>TIER 4 // CARDS</p>
+            <h3>DEALER</h3>
+            <span>Commander-card validation, selection, and action modifiers.</span>
+            <div>
+              <a href="https://rustycohl.github.io/DEALER/">OPEN PORT</a>
+              <a href="https://github.com/rustycohl/DEALER">SOURCE</a>
+            </div>
+          </article>
+
+          <article class="port-card port-card--acid">
+            <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
+            <p>TIER 1 // PLAYABLE PROOF</p>
+            <h3>MARK</h3>
+            <span>Deterministic challenges and resolved gameplay evidence.</span>
+            <div>
+              <a href="https://rustycohl.github.io/MARK/">OPEN PORT</a>
+              <a href="https://github.com/rustycohl/MARK">SOURCE</a>
+            </div>
+          </article>
+
+          <article class="port-card port-card--orange">
+            <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
+            <p>TIER 1 // WORK</p>
+            <h3>P2Pm</h3>
+            <span>Literal SHA-256 proof-of-work and artifact verification.</span>
+            <div>
+              <a href="https://rustycohl.github.io/P2Pm/">OPEN PORT</a>
+              <a href="https://github.com/rustycohl/P2Pm">SOURCE</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="boundary" aria-labelledby="boundary-heading">
         <div>
           <p class="eyebrow">ALPHA BOUNDARY</p>
@@ -294,9 +376,10 @@
 
     <footer>
       <span>GZG:NOW // BUILD THE EVIDENCE</span>
-      <a href="https://github.com/rustycohl/groundzerogaming">
-        MODULAR DESIGN NOTEBOOK ↗
-      </a>
+      <nav aria-label="Project repositories">
+        <a href="https://github.com/rustycohl/GZG-NOW">ALPHA SOURCE</a>
+        <a href="https://github.com/rustycohl/groundzerogaming">DESIGN NOTEBOOK</a>
+      </nav>
     </footer>
 
     <script type="module" src="./app.mjs"></script>

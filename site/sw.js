@@ -1,10 +1,11 @@
-const CACHE_NAME = "gzg-now-0.1.0-alpha.1";
+const CACHE_NAME = "gzg-now-0.1.0-alpha.2-ports";
 const ASSETS = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.mjs",
   "./manifest.webmanifest",
+  "./card-registry.json",
   "./assets/gzg-mark.svg",
   "./lib/action-economy.mjs",
   "./lib/core.mjs",

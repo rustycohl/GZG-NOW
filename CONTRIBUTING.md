@@ -20,6 +20,7 @@ npm run check
 npm test
 ```
 
-Software contributions are accepted under Apache-2.0 unless explicitly agreed
-otherwise. Documentation contributions under `docs/` are accepted under
-CC BY 4.0.
+Version 0.1 software contributions are accepted under MIT or Apache-2.0, at
+the recipient's option, unless explicitly agreed otherwise. Documentation
+contributions under `docs/` are accepted under CC BY 4.0. The v0.2 software
+line is intended to use Apache-2.0.

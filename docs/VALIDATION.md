@@ -5,7 +5,7 @@ Date: 2026-07-28
 ## Automated checks
 
 - Node.js 22 syntax check: pass.
-- Protocol and rules suite: 13/13 pass.
+- Product protocol, rules, and registry suite: 16/16 pass.
 - Canonical serialization and deterministic generation: pass.
 - Published d10 ability table, including `4–5 → -2`: pass.
 - Scaled DC tiers and 6+ threat confirmation: pass.
@@ -15,6 +15,7 @@ Date: 2026-07-28
 - Ghost mint rejection: pass.
 - Claimed-session artifact proof and derived ownership: pass.
 - MARK replay determinism: pass.
+- Dedicated repo/Page flag, uniqueness, and complete alpha port set: pass.
 
 ## Live browser walkthrough
 
@@ -35,10 +36,29 @@ Surface: isolated in-app Chromium browser at `http://127.0.0.1:4173`
 The proof count is evidence from this walkthrough, not a fixed expected value;
 each new random session seed produces different literal work.
 
+## Independent server-card ports
+
+Repositories and Pages:
+
+- `rustycohl/ORACLE` — <https://rustycohl.github.io/ORACLE/>
+- `rustycohl/d10SRD` — <https://rustycohl.github.io/d10SRD/>
+- `rustycohl/xCommand` — <https://rustycohl.github.io/xCommand/>
+- `rustycohl/DEALER` — <https://rustycohl.github.io/DEALER/>
+- `rustycohl/MARK` — <https://rustycohl.github.io/MARK/>
+- `rustycohl/P2Pm` — <https://rustycohl.github.io/P2Pm/>
+
+Each independent repository passed its Node.js port test. Each Pages deployment
+completed successfully. A public-browser sweep then produced `PORT PASS` on all
+six live Pages, with no console entries.
+
+The alpha.2 hub was also tested locally after integration. It exposed all six
+flags and twelve Page/source links, identified the product as Ground Zero
+Games, completed the full four-event evidence loop, verified the artifact
+proof and derived owner, and produced no console entries.
+
 ## Still pending at this checkpoint
 
-- GitHub Actions execution on the eventual repository.
-- Production GitHub Pages deployment and URL smoke test.
+- Production GZG:NOW alpha.2 Pages deployment and URL smoke test.
 - Dedicated narrow-viewport browser capture.
 - External security review.
 - JOKE wallet/chain adapter and peer transport, which are out of scope for this

@@ -13,9 +13,12 @@ The source files remain outside this repository and are not republished here.
 - `04-SCOPE-LOCK.md`
 - `20-CONFLICT-REGISTER.md`
 - `21-RESOLUTIONS-2026-07-28.md`
+- `CANON LEDGER — METHOD AND SOURCES.md`
 - `CORE-EEE-ALTERNATIVE-PATH.md`
 - `CORPORATE-STRUCTURE.md`
 - `D10SRD-CORE-CONVERSION.md`
+- `GZG — Master Plan {#gzg-master-plan.md`
+- `GZG — RESOLVED ARCHITECTURE.md`
 - `GZG — WORKING STATE.md`
 - `HOLO.md`
 - `LICENSING.md`

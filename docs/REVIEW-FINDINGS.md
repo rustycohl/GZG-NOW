@@ -41,10 +41,13 @@ headless tests pass. It includes a polished tactical prototype, open rules
 packages, service experiments, and a Pages candidate. Its matchmaking and
 server-authority pieces are historical experiments under the newer canon.
 
-## Traceability gap
+## Resolved architecture arrival
 
-One working-state note references `GZG-ARCHITECTURE-RESOLVED.md`, but that exact
-file was not present in the local canonical batch or connected Drive search.
-The July 28 resolutions and the full current canonical batch contain enough
-controlling decisions to build this slice. The missing filename remains logged
-for future provenance, not treated as a blocker.
+The final local upload added `GZG — RESOLVED ARCHITECTURE.md` and the master
+plan after the initial review pass. They confirm the no-game-server boundary,
+the generic-to-franchise dual register, the Tier-ordered build, the permanent
+v0.1 open-license lane, and the requirement that code and proof—not documents
+alone—gate advancement.
+
+The working-state reference used a slightly different path/name. That is now a
+minor provenance alias rather than a missing architectural source.

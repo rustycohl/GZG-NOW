@@ -1,7 +1,7 @@
 {
   "name": "GZG:NOW Protocol Reference Alpha",
   "short_name": "GZG:NOW",
-  "description": "A browser-local signed cause-and-effect loop for Ground Zero Gaming.",
+  "description": "A browser-local signed cause-and-effect loop for Ground Zero Games.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

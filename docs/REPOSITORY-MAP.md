@@ -2,22 +2,24 @@
 
 ## 1. `groundzerogaming`
 
-Purpose: the already-published modular design notebook and “build a better one
-if you like” pitch.
+Purpose: the already-published Creative Commons document line—**creative writing
+that compiles**—and “build a better one if you like” pitch.
 
 Publication: documentation only. Preserve the original DOCX release. Add a
 truthful plaintext landing page and errata/index only as an additive follow-up.
 
-License lane: CC BY 4.0 for material intentionally released under that license.
+Name and license lane: “Ground Zero Gaming” identifies this documentary/rules
+publication. Material intentionally released here uses CC BY 4.0.
 
 ## 2. `GZG-NOW`
 
-Purpose: the first current runnable Ground Zero Gaming product and protocol
+Purpose: the first current runnable Ground Zero Games product and protocol
 reference alpha.
 
 Publication: full source, tests, documentation, and one GitHub Pages deployment.
 
-License lane: Apache-2.0 software; CC BY 4.0 original documentation.
+License lane: v0.1 software under MIT or Apache-2.0; v0.2+ software under
+Apache-2.0; original documentation under CC BY 4.0.
 
 ## 3. BattleStar / xCommand alpha
 
@@ -40,3 +42,6 @@ the active product.
 Each active product repository gets its own Pages surface. Documentation-only
 legacy repositories may get a Pages index, but no document archive is described
 as runnable software.
+
+The publication boundary is deliberate: **Gaming publishes documents; Games
+ships products.**

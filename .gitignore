@@ -8,3 +8,5 @@ coverage/
 dist/
 workbench/*
 !workbench/README.md
+ports/*
+!ports/README.md
