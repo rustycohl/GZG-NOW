@@ -1,6 +1,6 @@
 {
   "schema": "gzg.server-card-registry/0.1",
-  "registry_version": "2026-07-28.1",
+  "registry_version": "2026-07-28.2",
   "hosting_rule": "one server card = one independent repository = one live Page",
   "flag": "DEDICATED_REPO_PAGE",
   "cards": [
@@ -9,14 +9,16 @@
       "tier": 2,
       "version": "0.1.0-alpha.1",
       "status": "alpha",
+      "audience_role": "development-test",
       "repository": "rustycohl/ORACLE",
       "page": "https://rustycohl.github.io/ORACLE/"
     },
     {
       "id": "d10SRD",
       "tier": 3,
-      "version": "0.1.0-alpha.1",
+      "version": "0.1.0-alpha.2",
       "status": "alpha",
+      "audience_role": "public-release-and-protocol-port",
       "repository": "rustycohl/d10SRD",
       "page": "https://rustycohl.github.io/d10SRD/"
     },
@@ -25,6 +27,7 @@
       "tier": 4,
       "version": "0.1.0-alpha.1",
       "status": "alpha",
+      "audience_role": "development-test",
       "repository": "rustycohl/xCommand",
       "page": "https://rustycohl.github.io/xCommand/"
     },
@@ -33,6 +36,7 @@
       "tier": 4,
       "version": "0.1.0-alpha.1",
       "status": "alpha",
+      "audience_role": "development-test",
       "repository": "rustycohl/DEALER",
       "page": "https://rustycohl.github.io/DEALER/"
     },
@@ -41,6 +45,7 @@
       "tier": 1,
       "version": "0.1.0-alpha.1",
       "status": "alpha",
+      "audience_role": "development-test",
       "repository": "rustycohl/MARK",
       "page": "https://rustycohl.github.io/MARK/"
     },
@@ -49,6 +54,7 @@
       "tier": 1,
       "version": "0.1.0-alpha.1",
       "status": "alpha",
+      "audience_role": "development-test",
       "repository": "rustycohl/P2Pm",
       "page": "https://rustycohl.github.io/P2Pm/"
     }

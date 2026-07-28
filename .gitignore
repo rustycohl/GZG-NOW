@@ -10,3 +10,5 @@ workbench/*
 !workbench/README.md
 ports/*
 !ports/README.md
+products/*
+!products/README.md

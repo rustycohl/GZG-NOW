@@ -1,0 +1,37 @@
+{
+  "schema": "gzg.product-registry/0.1",
+  "registry_version": "2026-07-28.1",
+  "publication_model": "two products + one SRD",
+  "public_release": [
+    {
+      "id": "BattleStarSol",
+      "role": "themed-clean-tab-launch",
+      "status": "alpha",
+      "repository": "rustycohl/BattleStarSol",
+      "page": "https://rustycohl.github.io/BattleStarSol/"
+    },
+    {
+      "id": "X-Command",
+      "role": "standalone-tactical-generator-demo",
+      "status": "alpha",
+      "repository": "rustycohl/X-Command",
+      "page": "https://rustycohl.github.io/X-Command/"
+    },
+    {
+      "id": "d10SRD",
+      "role": "creative-commons-rules-reference",
+      "status": "alpha",
+      "repository": "rustycohl/d10SRD",
+      "page": "https://rustycohl.github.io/d10SRD/"
+    }
+  ],
+  "development_network": [
+    "GZG-NOW",
+    "ORACLE",
+    "d10SRD",
+    "xCommand",
+    "DEALER",
+    "MARK",
+    "P2Pm"
+  ]
+}

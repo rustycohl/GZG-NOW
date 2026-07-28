@@ -27,7 +27,7 @@
         <span class="pulse" aria-hidden="true"></span>
         <span id="boot-status">INITIALIZING LOCAL PROTOCOL</span>
       </div>
-      <span class="version">0.1.0-alpha.2</span>
+      <span class="version">0.1.0-alpha.3</span>
     </header>
 
     <main id="main">
@@ -260,23 +260,69 @@
         <ol class="ledger" id="ledger-list" aria-label="Signed events"></ol>
       </section>
 
+      <section class="release-map" aria-labelledby="release-heading">
+        <header class="release-map__header">
+          <div>
+            <p class="eyebrow">INITIAL PUBLIC RELEASE // TWO PRODUCTS + ONE SRD</p>
+            <h2 id="release-heading">THE FRONT DOOR</h2>
+          </div>
+          <p>
+            These three surfaces are the first audience-facing release.
+            GZG:NOW and the remaining Pages stay live and public as the
+            development network behind them.
+          </p>
+        </header>
+
+        <div class="release-grid">
+          <article class="release-card release-card--cyan">
+            <span class="release-card__index">01 // LAUNCH</span>
+            <h3>BATTLE/<wbr>STAR.SOL</h3>
+            <p>The themed launch page for a clean browser tab.</p>
+            <div>
+              <a href="https://rustycohl.github.io/BattleStarSol/">OPEN PRODUCT</a>
+              <a href="https://github.com/rustycohl/BattleStarSol">SOURCE</a>
+            </div>
+          </article>
+
+          <article class="release-card release-card--pink">
+            <span class="release-card__index">02 // PRODUCT DEMO</span>
+            <h3>X-COMMAND</h3>
+            <p>A standalone deterministic tactical generator.</p>
+            <div>
+              <a href="https://rustycohl.github.io/X-Command/">OPEN PRODUCT</a>
+              <a href="https://github.com/rustycohl/X-Command">SOURCE</a>
+            </div>
+          </article>
+
+          <article class="release-card release-card--acid">
+            <span class="release-card__index">03 // RULES COMMONS</span>
+            <h3>d10SRD</h3>
+            <p>The Creative Commons rules reference and executable proof.</p>
+            <div>
+              <a href="https://rustycohl.github.io/d10SRD/">OPEN SRD</a>
+              <a href="https://github.com/rustycohl/d10SRD">SOURCE</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="ports" aria-labelledby="ports-heading">
         <header class="ports__header">
           <div>
-            <p class="eyebrow">PORTS IN A STORM // LIVE INDEPENDENT SURFACES</p>
-            <h2 id="ports-heading">SERVER-CARD FLAGS</h2>
+            <p class="eyebrow">DEVELOPMENT NETWORK // LIVE PUBLIC TEST SURFACES</p>
+            <h2 id="ports-heading">BACKEND PORT FLAGS</h2>
           </div>
           <p>
-            Every working card below owns a repository, a public Page, and an
-            executable self-test. GZG:NOW consumes the ports; it does not contain
-            their live surfaces.
+            Every working card below still owns a repository, a public Page,
+            and an executable self-test. d10SRD serves both lanes; the others
+            primarily support integration and backend testing.
           </p>
         </header>
 
         <div class="port-grid">
           <article class="port-card port-card--cyan">
             <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
-            <p>TIER 2 // IDENTITY</p>
+            <p>DEV TEST // TIER 2 // IDENTITY</p>
             <h3>ORACLE</h3>
             <span>Ghost identity, session claims, and signature verification.</span>
             <div>
@@ -287,7 +333,7 @@
 
           <article class="port-card port-card--acid">
             <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
-            <p>TIER 3 // RESOLUTION</p>
+            <p>PUBLIC SRD + PORT // TIER 3</p>
             <h3>d10SRD</h3>
             <span>Canonical scaled-d10 result and confirmation rules.</span>
             <div>
@@ -298,7 +344,7 @@
 
           <article class="port-card port-card--pink">
             <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
-            <p>TIER 4 // TACTICS</p>
+            <p>DEV TEST // TIER 4 // TACTICS</p>
             <h3>xCommand</h3>
             <span>Strict Base-10 action authority and turn accounting.</span>
             <div>
@@ -309,7 +355,7 @@
 
           <article class="port-card port-card--pink">
             <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
-            <p>TIER 4 // CARDS</p>
+            <p>DEV TEST // TIER 4 // CARDS</p>
             <h3>DEALER</h3>
             <span>Commander-card validation, selection, and action modifiers.</span>
             <div>
@@ -320,7 +366,7 @@
 
           <article class="port-card port-card--acid">
             <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
-            <p>TIER 1 // PLAYABLE PROOF</p>
+            <p>DEV TEST // TIER 1 // PLAYABLE PROOF</p>
             <h3>MARK</h3>
             <span>Deterministic challenges and resolved gameplay evidence.</span>
             <div>
@@ -331,7 +377,7 @@
 
           <article class="port-card port-card--orange">
             <span class="port-card__flag">DEDICATED_REPO_PAGE</span>
-            <p>TIER 1 // WORK</p>
+            <p>DEV TEST // TIER 1 // WORK</p>
             <h3>P2Pm</h3>
             <span>Literal SHA-256 proof-of-work and artifact verification.</span>
             <div>

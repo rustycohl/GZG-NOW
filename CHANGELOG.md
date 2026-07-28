@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.0-alpha.3 — 2026-07-28
+
+- Established the first audience-facing release as two standalone products
+  (`BattleStarSol`, `X-Command`) plus one rules reference (`d10SRD`).
+- Classified GZG:NOW and the remaining live Pages as the public development
+  and backend-test network.
+- Added a machine-readable product registry and publication hierarchy tests.
+- Promoted d10SRD to a readable public reference without removing its
+  independent executable port role.
+
 ## 0.1.0-alpha.2 — 2026-07-28
 
 - Added the independent server-card port contract: one card, one repository,

@@ -19,3 +19,7 @@ First extracted ports:
 They share a generated visual shell but no live shared runtime. Every port
 ships the source modules it needs, its own automated test, a browser self-test,
 a machine-readable `card.json`, and an independent Pages workflow.
+
+`d10SRD` has a dual role: it is both a protocol port and one of the three
+audience-facing release surfaces. The remaining ports primarily support live
+backend and integration testing.

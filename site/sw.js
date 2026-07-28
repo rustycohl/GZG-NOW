@@ -1,4 +1,4 @@
-const CACHE_NAME = "gzg-now-0.1.0-alpha.2-ports";
+const CACHE_NAME = "gzg-now-0.1.0-alpha.3-release-map-2";
 const ASSETS = [
   "./",
   "./index.html",
@@ -6,6 +6,7 @@ const ASSETS = [
   "./app.mjs",
   "./manifest.webmanifest",
   "./card-registry.json",
+  "./product-registry.json",
   "./assets/gzg-mark.svg",
   "./lib/action-economy.mjs",
   "./lib/core.mjs",

@@ -5,6 +5,9 @@ import test from "node:test";
 const registry = JSON.parse(
   await readFile(new URL("../site/card-registry.json", import.meta.url), "utf8"),
 );
+const products = JSON.parse(
+  await readFile(new URL("../site/product-registry.json", import.meta.url), "utf8"),
+);
 
 test("every published server card carries the dedicated repo/Page flag", () => {
   assert.equal(registry.flag, "DEDICATED_REPO_PAGE");
@@ -31,5 +34,23 @@ test("the first live port set covers the complete alpha evidence loop", () => {
   assert.deepEqual(
     registry.cards.map((card) => card.id).sort(),
     ["DEALER", "MARK", "ORACLE", "P2Pm", "d10SRD", "xCommand"].sort(),
+  );
+});
+
+test("the audience-facing release is exactly two products and one SRD", () => {
+  assert.equal(products.publication_model, "two products + one SRD");
+  assert.deepEqual(
+    products.public_release.map((product) => product.id),
+    ["BattleStarSol", "X-Command", "d10SRD"],
+  );
+  assert.equal(
+    products.public_release.filter((product) => product.role.includes("rules")).length,
+    1,
+  );
+  assert.ok(
+    products.public_release.every((product) => (
+      product.repository === `rustycohl/${product.id}`
+      && product.page === `https://rustycohl.github.io/${product.id}/`
+    )),
   );
 });

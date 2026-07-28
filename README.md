@@ -32,6 +32,8 @@ Then open `http://127.0.0.1:4173`. GitHub Pages publishes the same files from
 - `site/` — the complete browser product.
 - `tests/` — deterministic protocol and rules tests.
 - `docs/` — current engineering contract, review findings, and publication map.
+- `products/` — a map to independent audience-facing product repositories.
+- `ports/` — a map to independent protocol/test repositories.
 - `tools/` — a tiny local static server for testing.
 
 The separate `rustycohl/groundzerogaming` repository is the already-published
@@ -40,9 +42,20 @@ names the documentary/rules publication, while “Games” names runnable produc
 That repository is preserved as its own deliverable and is not represented here
 as executable software.
 
+## Public release hierarchy
+
+The first audience-facing release is:
+
+1. `BattleStarSol` — the themed launch page for a clean browser tab;
+2. `X-Command` — the standalone tactical-generator product demo; and
+3. `d10SRD` — the Creative Commons rules reference.
+
+GZG:NOW and the remaining independent Pages stay live and public, primarily as
+the integration lab and backend test network.
+
 ## Status
 
-Version: `0.1.0-alpha.2`
+Version: `0.1.0-alpha.3`
 
 This is pre-alpha-to-alpha bridge work. It is suitable for protocol inspection,
 local play, replay verification, and static web testing. It is not suitable for

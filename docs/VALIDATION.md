@@ -5,7 +5,7 @@ Date: 2026-07-28
 ## Automated checks
 
 - Node.js 22 syntax check: pass.
-- Product protocol, rules, and registry suite: 16/16 pass.
+- Product protocol, rules, and registry suite: 17/17 pass.
 - Canonical serialization and deterministic generation: pass.
 - Published d10 ability table, including `4–5 → -2`: pass.
 - Scaled DC tiers and 6+ threat confirmation: pass.
@@ -16,6 +16,7 @@ Date: 2026-07-28
 - Claimed-session artifact proof and derived ownership: pass.
 - MARK replay determinism: pass.
 - Dedicated repo/Page flag, uniqueness, and complete alpha port set: pass.
+- Two-products-plus-one-SRD publication hierarchy: pass.
 
 ## Live browser walkthrough
 
@@ -51,14 +52,29 @@ Each independent repository passed its Node.js port test. Each Pages deployment
 completed successfully. A public-browser sweep then produced `PORT PASS` on all
 six live Pages, with no console entries.
 
-The alpha.2 hub was also tested locally after integration. It exposed all six
-flags and twelve Page/source links, identified the product as Ground Zero
-Games, completed the full four-event evidence loop, verified the artifact
-proof and derived owner, and produced no console entries.
+## Initial public release
+
+- `BattleStarSol`: 2/2 repository checks pass. The public Page exposed exactly
+  two audience launch cards plus the development-lab route, with no console
+  entries.
+- `X-Command`: 8/8 deterministic-generator checks pass. The public Page
+  generated 192 cells, passed replay, resolved a 4 AP contact from the strict
+  10 AP pool, and produced no console entries.
+- `d10SRD`: 3/3 publication and conformance checks pass. The public Page passed
+  its port self-test, resolved the published confirmed-critical example, and
+  produced no console entries.
+
+All three repository workflows and GitHub Pages deployments completed
+successfully.
+
+The alpha.3 GZG:NOW hub was tested locally after integration. It exposed the
+three public-release entries separately from all six backend port flags,
+completed the full four-event evidence loop, verified the artifact proof and
+derived owner, and produced no console entries.
 
 ## Still pending at this checkpoint
 
-- Production GZG:NOW alpha.2 Pages deployment and URL smoke test.
+- Production GZG:NOW alpha.3 Pages deployment and URL smoke test.
 - Dedicated narrow-viewport browser capture.
 - External security review.
 - JOKE wallet/chain adapter and peer transport, which are out of scope for this
