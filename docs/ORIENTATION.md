@@ -25,12 +25,15 @@ The first public release is intentionally three surfaces:
 
 | Surface | Role | Live Page |
 | --- | --- | --- |
-| `BattleStarSol` | Themed launch page for a clean browser tab | <https://rustycohl.github.io/BattleStarSol/> |
+| `BattleStarSol` | Playable A.T.L.A.S.-to-Godot strategic/tactical pre-alpha | <https://rustycohl.github.io/BattleStarSol/> |
 | `X-Command` | Standalone deterministic tactical-generator product demo | <https://rustycohl.github.io/X-Command/> |
 | `d10SRD` | Creative Commons rules reference and executable conformance proof | <https://rustycohl.github.io/d10SRD/> |
 
-`BattleStarSol` is deliberately inert. It is a front door, not the BattleStar
-game and not a strategic or tactical authority.
+`BattleStarSol` now carries the actual recovered and corrected Godot game. Its
+Page embeds a pinned A.T.L.A.S. fallback, emits a versioned deployment, runs the
+Base-10 tactical turn cycle, and returns an idempotent extraction to the local
+campaign vault. The earlier static launch surface remains archived in that
+repository rather than being mistaken for the product.
 
 `X-Command` is a real product demo, but its current boundary is exact:
 deterministic deployment generation, a guaranteed route, versioned payload,
@@ -62,6 +65,7 @@ hosting yield, public peer transport, or production security.
 
 Each working server card is also an independent **port in a storm**:
 
+- A.T.L.A.S. — <https://rustycohl.github.io/ATLAS/>
 - ORACLE — <https://rustycohl.github.io/ORACLE/>
 - d10SRD — <https://rustycohl.github.io/d10SRD/>
 - xCommand — <https://rustycohl.github.io/xCommand/>
@@ -69,10 +73,13 @@ Each working server card is also an independent **port in a storm**:
 - MARK — <https://rustycohl.github.io/MARK/>
 - P2Pm — <https://rustycohl.github.io/P2Pm/>
 
-These Pages remain live and open. Except for d10SRD’s dual role, they primarily
-serve integration and backend testing. A port receives a repository only when
-it has working code, tests, truthful status, and an independent Page; empty
-canonical names do not receive hollow repositories.
+These Pages remain live and open. A.T.L.A.S. is a standalone strategic galaxy,
+not a server card; it is listed with the network because it is independent
+infrastructure and supplies the standard `atlas.selection` boundary. Except
+for d10SRD’s dual role, these surfaces primarily serve integration and backend
+testing. A galaxy receives a repository only when it has working code, tests,
+truthful status, and an independent Page; empty canonical names do not receive
+hollow repositories.
 
 ## 4. Canonical implementation rules
 
@@ -104,8 +111,9 @@ The legacy BattleStar/xCommand Godot tree remains evidence, not cleanup:
   world builder, movement, combat, AI, and presentation work remain valuable;
 - its older matchmaking and server-authority experiments are superseded by
   the no-game-server decision; and
-- the inspected Web wrapper referenced runtime `.wasm` and `.pck` files that
-  were not present, so it is not represented as the current live product.
+- the formerly missing Web runtime was rebuilt from the reviewed source, tied
+  to that source by a SHA-256 manifest, and is now the live BattleStarSol
+  pre-alpha rather than an unverified historical wrapper.
 
 The Gemini modularization contributes useful separation notes and recovered
 modules, but it is not a complete runnable replacement for the legacy Godot
@@ -119,13 +127,16 @@ Two tracks now proceed without conflating them:
 
 ### Public product track
 
-1. Keep `BattleStarSol` small and stable as the launch surface.
-2. Extend `X-Command` from generator to one deterministic playable tactical
+1. Hold `BattleStarSol` at its verified strategic-to-tactical-to-strategic
+   pre-alpha boundary while corrections land as tight modules.
+2. Extend standalone `X-Command` from generator to one deterministic playable tactical
    turn: route selection, AP-priced movement, cover posture, one hostile
    response, event record, and extraction payload.
-3. Keep the generated deployment contract byte-stable and versioned while the
-   playable surface grows around it.
-4. Finish narrow-viewport and keyboard/accessibility QA across the release
+3. Keep generic A.T.L.A.S. independently usable and copy only pinned,
+   reviewed snapshots into composed products.
+4. Keep deployment and extraction envelopes versioned while the standalone
+   products evolve behind their adapters.
+5. Finish narrow-viewport and keyboard/accessibility QA across the release
    trio.
 
 ### Substrate track

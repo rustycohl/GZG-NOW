@@ -19,7 +19,7 @@ import {
   verifyArtifact,
 } from "./lib/p2pm.mjs";
 
-const BUILD = "0.1.0-alpha.3";
+const BUILD = "0.1.0-alpha.4";
 
 const state = {
   identity: null,

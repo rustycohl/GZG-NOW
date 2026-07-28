@@ -15,12 +15,16 @@ publication. Material intentionally released here uses CC BY 4.0.
 
 The audience-facing front door is deliberately small:
 
-1. `BattleStarSol` — themed clean-tab launch Page;
+1. `BattleStarSol` — playable strategic/tactical Godot pre-alpha;
 2. `X-Command` — standalone tactical-generator product demo; and
 3. `d10SRD` — Creative Commons rules reference and executable conformance Page.
 
 Each is a standalone repository with its own Page. `d10SRD` also remains an
 independent protocol port.
+
+Generic `ATLAS` is a separate strategic-infrastructure galaxy with its own
+repository and Page. It remains outside the three-item audience pitch while
+providing a public standalone tool and a pinned fallback for composed products.
 
 ## 3. `GZG-NOW`
 
@@ -38,9 +42,11 @@ Apache-2.0; original documentation under CC BY 4.0.
 
 Purpose: tactical product line built from the green Godot pre-alpha baseline.
 
-Publication: full product source once the current no-server boundary and
-module split are reconciled. Historical snapshots become documentation or
-release evidence, not the active root.
+Publication: `BattleStarSol` now ships the full reviewed Godot source, committed
+Web runtime, tests, message contracts, and validation record. `X-Command`
+remains a separate deterministic generator product while its own playable
+tactical module is built. Historical snapshots remain documentation or release
+evidence, not the active root.
 
 The new `BattleStarSol` and `X-Command` repositories are clean standalone
 products derived from that lineage; they do not rename or erase the legacy

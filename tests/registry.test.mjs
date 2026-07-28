@@ -47,10 +47,21 @@ test("the audience-facing release is exactly two products and one SRD", () => {
     products.public_release.filter((product) => product.role.includes("rules")).length,
     1,
   );
+  assert.match(products.public_release[0].role, /playable/u);
   assert.ok(
     products.public_release.every((product) => (
       product.repository === `rustycohl/${product.id}`
       && product.page === `https://rustycohl.github.io/${product.id}/`
     )),
   );
+});
+
+test("A.T.L.A.S. is registered as its own standalone strategic galaxy", () => {
+  assert.deepEqual(
+    products.standalone_galaxies.map((galaxy) => galaxy.id),
+    ["ATLAS"],
+  );
+  assert.equal(products.standalone_galaxies[0].repository, "rustycohl/ATLAS");
+  assert.equal(products.standalone_galaxies[0].page, "https://rustycohl.github.io/ATLAS/");
+  assert.ok(products.development_network.includes("ATLAS"));
 });

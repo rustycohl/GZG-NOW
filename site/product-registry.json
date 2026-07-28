@@ -1,12 +1,13 @@
 {
   "schema": "gzg.product-registry/0.1",
-  "registry_version": "2026-07-28.1",
+  "registry_version": "2026-07-28.2",
   "publication_model": "two products + one SRD",
   "public_release": [
     {
       "id": "BattleStarSol",
-      "role": "themed-clean-tab-launch",
-      "status": "alpha",
+      "role": "playable-strategic-tactical-prealpha",
+      "status": "pre-alpha",
+      "version": "0.1.1-prealpha.1",
       "repository": "rustycohl/BattleStarSol",
       "page": "https://rustycohl.github.io/BattleStarSol/"
     },
@@ -25,8 +26,19 @@
       "page": "https://rustycohl.github.io/d10SRD/"
     }
   ],
+  "standalone_galaxies": [
+    {
+      "id": "ATLAS",
+      "role": "standalone-strategic-infrastructure",
+      "status": "alpha",
+      "version": "0.1.0-alpha.2",
+      "repository": "rustycohl/ATLAS",
+      "page": "https://rustycohl.github.io/ATLAS/"
+    }
+  ],
   "development_network": [
     "GZG-NOW",
+    "ATLAS",
     "ORACLE",
     "d10SRD",
     "xCommand",

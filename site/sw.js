@@ -1,4 +1,4 @@
-const CACHE_NAME = "gzg-now-0.1.0-alpha.3-release-map-2";
+const CACHE_NAME = "gzg-now-0.1.0-alpha.4-galaxy-map-1";
 const ASSETS = [
   "./",
   "./index.html",

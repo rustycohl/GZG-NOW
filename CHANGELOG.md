@@ -2,12 +2,23 @@
 
 ## Unreleased
 
+## 0.1.0-alpha.4 — 2026-07-28
+
 - Defined every independently deployed Page as a galaxy with its own
   repository, runtime, tests, documentation, and standalone fallback.
 - Added the transport-neutral `gzg.galaxy-message/1.0` envelope, JSON schema,
   canonical examples, executable validation, SHA-256 sealing, and tamper tests.
 - Recorded the backup-to-live-smoke modular delivery loop and the distinct
   push/deploy versus Creative Commons publication lanes.
+- Registered the independently released generic A.T.L.A.S. galaxy and its
+  public Page.
+- Reclassified BattleStarSol from a static launch surface to the verified
+  playable Godot pre-alpha while preserving the three-item initial pitch.
+- Replaced the illustrative extraction fixture with the canonical nested
+  `xcommand.extraction` payload emitted by the live tactical runtime.
+- Corrected that fixture to the exact millisecond UTC timestamp form required
+  by the executable shared validator.
+- Updated the Pages toolchain to the current Node 24-compatible action majors.
 
 ## 0.1.0-alpha.3 — 2026-07-28
 

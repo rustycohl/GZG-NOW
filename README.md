@@ -56,16 +56,22 @@ as executable software.
 
 The first audience-facing release is:
 
-1. `BattleStarSol` — the themed launch page for a clean browser tab;
+1. `BattleStarSol` — the playable A.T.L.A.S.-to-Godot strategic/tactical
+   pre-alpha;
 2. `X-Command` — the standalone tactical-generator product demo; and
 3. `d10SRD` — the Creative Commons rules reference.
 
 GZG:NOW and the remaining independent Pages stay live and public, primarily as
 the integration lab and backend test network.
 
+Generic `A.T.L.A.S.` is independently available at
+<https://rustycohl.github.io/ATLAS/>. It is strategic infrastructure rather
+than a fourth item in the initial audience pitch, and BattleStarSol carries its
+own pinned fallback copy.
+
 ## Status
 
-Version: `0.1.0-alpha.3`
+Version: `0.1.0-alpha.4`
 
 This is pre-alpha-to-alpha bridge work. It is suitable for protocol inspection,
 local play, replay verification, and static web testing. It is not suitable for

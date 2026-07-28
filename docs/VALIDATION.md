@@ -10,13 +10,13 @@ Date: 2026-07-28
 - Unknown extension fields survive validation and forwarding: pass.
 - Required discriminator and version cannot be overridden by callers: pass.
 - Canonical SHA-256 sealing verifies and detects payload tampering: pass.
-- Full GZG:NOW suite after the module: 22/22 pass.
+- Full GZG:NOW suite after the module: 23/23 pass.
 - Node.js syntax checks: pass.
 
 ## Automated checks
 
 - Node.js 22 syntax check: pass.
-- Product protocol, rules, and registry suite: 17/17 pass.
+- Full protocol, rules, contract, and registry suite: 23/23 pass.
 - Canonical serialization and deterministic generation: pass.
 - Published d10 ability table, including `4–5 → -2`: pass.
 - Scaled DC tiers and 6+ threat confirmation: pass.
@@ -28,6 +28,9 @@ Date: 2026-07-28
 - MARK replay determinism: pass.
 - Dedicated repo/Page flag, uniqueness, and complete alpha port set: pass.
 - Two-products-plus-one-SRD publication hierarchy: pass.
+- Standalone A.T.L.A.S. galaxy registration and dedicated repo/Page: pass.
+- Live nested `xcommand.extraction` fixture and exact UTC timestamp shape:
+  pass after one corrective test loop.
 
 ## Live browser walkthrough
 
@@ -65,9 +68,11 @@ six live Pages, with no console entries.
 
 ## Initial public release
 
-- `BattleStarSol`: 2/2 repository checks pass. The public Page exposed exactly
-  two audience launch cards plus the development-lab route, with no console
-  entries.
+- `BattleStarSol`: 15/15 repository release checks, syntax checks, Godot
+  headless tests, and all 147 playtest assertions pass. The public Page loaded
+  A.T.L.A.S. alpha.2, launched the real Godot Web battlefield at 10/10 AP,
+  advanced from turn 1 to turn 2, extracted through F8, recorded three
+  survivors, and retained exactly one mission after forced reload.
 - `X-Command`: 8/8 deterministic-generator checks pass. The public Page
   generated 192 cells, passed replay, resolved a 4 AP contact from the strict
   10 AP pool, and produced no console entries.
@@ -78,6 +83,16 @@ six live Pages, with no console entries.
 All three repository workflows and GitHub Pages deployments completed
 successfully.
 
+## Standalone strategic galaxy
+
+- `rustycohl/ATLAS` — <https://rustycohl.github.io/ATLAS/>
+- Version `0.1.0-alpha.2`: 6/6 repository checks and syntax validation pass.
+- The successful public smoke rendered the globe with 3/18 default layers,
+  selected a coordinate, opened the inspector, and enabled bounded selection
+  export.
+- BattleStarSol carries a pinned byte-identical alpha.2 fallback, so neither
+  Page requires the other Page to be available at runtime.
+
 The alpha.3 GZG:NOW hub was tested locally after integration. It exposed the
 three public-release entries separately from all six backend port flags,
 completed the full four-event evidence loop, verified the artifact proof and
@@ -87,6 +102,13 @@ The production alpha.3 workflow then completed successfully. A public-browser
 smoke test confirmed version `0.1.0-alpha.3`, all three front-door entries, the
 separate backend-port section, local protocol readiness, and no console
 entries.
+
+The alpha.4 corrective module then passed 23/23 tests and both syntax checks.
+Its local browser smoke rendered version `0.1.0-alpha.4`, kept the initial
+two-products-plus-one-SRD front door unchanged, described BattleStarSol as the
+playable strategic/tactical pre-alpha, and exposed generic A.T.L.A.S. as a
+separate dedicated-repository strategic galaxy. Public deployment evidence is
+recorded after the release workflow and public Page smoke.
 
 ## Still pending at this checkpoint
 
